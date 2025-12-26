@@ -1,27 +1,45 @@
-<form method="POST" action="https://api.web3forms.com/submit">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact DGTech Consultancy</title>
+  <meta name="description" content="Contact DGTech Consultancy for DevOps training and consulting services.">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    form { max-width: 400px; margin: auto; }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
 
-  <input type="hidden" name="access_key" value="013f3aaf-3b93-4c61-960b-283017af5815">
+<h2>Contact Us</h2>
+
+<form action="https://getform.io/f/bqoqmowb" method="POST">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+ <input type="hidden" name="_gotcha" style="display:none !important">
+  <!-- Cloudflare Turnstile -->
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAACI7o6JPUCzwH18c"></div>
+
+  <!-- Redirect after submit -->
   <input type="hidden" name="redirect" value="https://dgtech1.github.io/thank-you.html">
 
-  <input type="hidden" name="subject" value="New Contact - DGTech Consultancy">
-  <input type="hidden" name="from_name" value="DGTech Website">
-
-  <label>Name</label>
-  <input type="text" name="name" required>
-
-  <label>Email</label>
-  <input type="email" name="email" required>
-
-  <label>Message</label>
-  <textarea name="message" required></textarea>
-
-  <!-- Cloudflare Turnstile -->
-  <div class="cf-turnstile"
-       data-sitekey="0x4AAAAAACI7o6JPUCzwH18c">
-  </div>
-
-  <button type="submit">Send</button>
+  <button type="submit">Send Message</button>
 </form>
 
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</body>
+</html>
 
