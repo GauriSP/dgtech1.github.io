@@ -1,47 +1,27 @@
-<!-- test changes -->
+<form method="POST" action="https://api.web3forms.com/submit">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<title>Contact DGTech Consultancy</title>
-<!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
-<style>
-        /* Simple CSS for better presentation - optional */
-        body { font-family: sans-serif; }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; }
-        input[type="text"], input[type="email"], textarea {
-            width: 300px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; }
-    </style>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</head>
-<body>
-<h1>Contact Us</h1>
-
-<form action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="013f3aaf-3b93-4c61-960b-283017af5815">
   <input type="hidden" name="redirect" value="https://dgtech1.github.io/thank-you.html">
 
-  <input type="text" name="name" placeholder="Your Name" required> <br>
-  <input type="email" name="email" placeholder="Your Email" required> <br>
-  <textarea name="message" placeholder="Enter your message" required></textarea>
+  <input type="hidden" name="subject" value="New Contact - DGTech Consultancy">
+  <input type="hidden" name="from_name" value="DGTech Website">
 
-  <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response">
-<div class="cf-turnstile" data-sitekey="0x4AAAAAACI7o6JPUCzwH18c" data-callback="turnstileCallback"></div>
+  <label>Name</label>
+  <input type="text" name="name" required>
 
+  <label>Email</label>
+  <input type="email" name="email" required>
 
-<button type="submit">Send</button>
+  <label>Message</label>
+  <textarea name="message" required></textarea>
+
+  <!-- Cloudflare Turnstile -->
+  <div class="cf-turnstile"
+       data-sitekey="0x4AAAAAACI7o6JPUCzwH18c">
+  </div>
+
+  <button type="submit">Send</button>
 </form>
-<script>
-function turnstileCallback(token) {
-  document.getElementById("cf-turnstile-response").value = token;
-}
-</script>
-</body>
-</html>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
