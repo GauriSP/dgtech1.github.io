@@ -14,123 +14,28 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />    
 
-<style>
-        :root {
-            --primary-blue: #2c3e50;
-            --secondary-blue: #34495e;
-            --accent-teal: #16a085;
-            --light-gray: #f4f7f6;
-            --text-color: #333;
-            --border-color: #dcdde1;
-        }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-gray);
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 50px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-
-        header {
-            border-bottom: 3px solid var(--accent-teal);
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-        }
-
-        h1 {
-            color: var(--primary-blue);
-            font-size: 2.4rem;
-            margin: 0;
-        }
-
-        h2 {
-            color: var(--secondary-blue);
-            border-left: 5px solid var(--accent-teal);
-            padding-left: 15px;
-            margin-top: 40px;
-            font-size: 1.6rem;
-        }
-
-        h3 {
-            color: var(--secondary-blue);
-            font-size: 1.2rem;
-            margin-top: 25px;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        .summary-box {
-            background-color: #e8f4f2;
-            padding: 20px;
-            border-radius: 5px;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .grid-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .outcomes {
-            background-color: var(--primary-blue);
-            color: white;
-            padding: 30px;
-            border-radius: 8px;
-            margin-top: 40px;
-        }
-
-        .outcomes h2 {
-            color: white;
-            border-left-color: white;
-            margin-top: 0;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #7f8c8d;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                padding: 20px;
-            }
-            .grid-list {
-                grid-template-columns: 1fr;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
+<header>
+  <nav>
+    <div class="logo">
+      <strong>DGTech Consultancy</strong>
+    </div>
+    <div>
+      <a href="https://www.dgtechconsultancy.com/#home">Home</a>
+      <a href="https://www.dgtechconsultancy.com/#services">Services</a>
+      <a href="https://www.dgtechconsultancy.com/#training">Training</a>
+      <a href="https://www.dgtechconsultancy.com/#blog">Blog</a>
+      <a href="https://www.dgtechconsultancy.com/contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
+    </div>
+        <div class="logo-container">
+            <img src="images/dgtechweb.png" alt="DGTech Logo" width="250" height="100"  class="main-logo">
+        </div>
+  </nav>
+</header>
 <div class="container">
     <header>
         <h1>Case Study: Infrastructure Modernization</h1>
@@ -223,10 +128,16 @@
         <h2>Conclusion</h2>
         <p>The adoption of Infrastructure as Code enabled a controlled, secure, and scalable transformation of the application infrastructure. This initiative demonstrates how modern cloud practices can significantly improve operational maturity while reducing risk and enabling long-term maintainability.</p>
     </section>
-
-    <footer>
-        <p>&copy; 2025 - Infrastructure Modernization Case Study</p>
-    </footer>
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 DGTech Consultancy Private Limited</p>
+  <p>
+    <a href="/">Home</a> |
+    <a href="/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
+    <a href="/terms.html" target="_blank" rel="noopener noreferrer">Terms</a> |
+    <a href="/contact.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+  </p>
+</footer>
 </div>
 
 </body>
